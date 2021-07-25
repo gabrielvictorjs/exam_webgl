@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" href="style.css" rel="stylesheet" />
+</head>
+
+<body onload="main()">
+  <div class="box">
+    <div class="controls">
+      <div class="controls-block">
+        <label for="rotation-z">Rotation Z:</label>
+        <input type="range" min="0" max="360" value="180" id="rotation-z">
+        <label for="scale">Scale:</label>
+        <input type="range" min=".1" max="1.9" value="1" step="0.01" id="scale">
+      </div>
+      <div class="controls-block">
+        <label for="translation-x">Translation X:</label>
+        <input type="range" min="-1" max="1" value="0" step="0.01" id="translation-x">
+        <label for="translation-y">Translation Y:</label>
+        <input type="range" min="-1" max="1" value="0" step="0.01" id="translation-y">
+      </div>
+    </div>
+    <canvas id="glCanvas"></canvas>
+  </div>
+
+  <script src="../common/webgl-utils.min.js"></script>
+  <script src="../common/polygon.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

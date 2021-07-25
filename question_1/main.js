@@ -56,20 +56,4 @@ function generatePolygon(gl) {
   gl.drawArrays(gl.TRIANGLE_FAN, 0, vertexData.length / 3);
 }
 
-function calculatePolygonPositions(sides) {
-  let positions = []
-
-  for (let i = 0; i < sides; i++) {
-    let theta0 = 2.0 * Math.PI * i / sides
-    positions.push(Math.sin(theta0), Math.cos(theta0), 0)
-  }
-
-  const firstX = positions[0]
-  const firstY = positions[1]
-
-  positions.push(firstX, firstY, 0)
-
-  return positions
-}
-
 main()

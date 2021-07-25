@@ -1,0 +1,19 @@
+* {
+  margin:  0;
+  box-sizing: border-box;
+}
+
+canvas {
+  background-color: indianred;
+}
+
+.controls {
+  padding: 20px;
+  display: flex;
+}
+
+.controls-block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
